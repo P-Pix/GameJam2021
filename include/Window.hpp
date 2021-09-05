@@ -10,6 +10,7 @@
 #ifndef _WINDOW_HPP_
 #define _WINDOW_HPP_
 
+#include <iostream>
 #include "../SDL2-2.0.16/include/SDL.h"
 
 class Window
@@ -30,6 +31,9 @@ class Window
         /// Test if the window is open
         /// \return True if the window is open False if not
         bool isOpen(void);
+
+        /// update the Window render
+        void rendered(void);
 };
 
 #endif

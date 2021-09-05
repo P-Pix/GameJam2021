@@ -12,14 +12,15 @@
 #include <iostream>
 #include "../include/Window.hpp"
 
-int main(void);
+int main(int argc, char* argv[]);
 
-int main(void)
+int main(int argc, char* argv[])
 {
     Window Window;
     while(Window.isOpen())
     {
 
     }
+    Window.rendered();
     return EXIT_SUCCESS;
 }
