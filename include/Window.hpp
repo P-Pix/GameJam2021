@@ -10,9 +10,12 @@
 #ifndef _WINDOW_HPP_
 #define _WINDOW_HPP_
 
+#include "../SDL2-2.0.16/include/SDL.h"
+
 class Window
 {
     private:
+        SDL_Window *m_Window;
 
     protected:
 
@@ -23,6 +26,10 @@ class Window
 
         /// Default Destructor
         ~Window(void);
+
+        /// Test if the window is open
+        /// \return True if the window is open False if not
+        bool isOpen(void);
 };
 
 #endif

@@ -9,11 +9,17 @@
 
 // Theme Join Together
 
-#include "SDL2-2.0.16/include/SDL.h"
+#include <iostream>
+#include "../include/Window.hpp"
 
 int main(void);
 
 int main(void)
 {
-    
+    Window Window;
+    while(Window.isOpen())
+    {
+
+    }
+    return EXIT_SUCCESS;
 }
