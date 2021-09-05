@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Other
+SDL2-2.0.16
+.vscode
