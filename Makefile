@@ -3,6 +3,8 @@ FILE	=	Game.obj\
 INCLUDE	=	src/main.cpp\
 			\
 			src/Window/Constructor.cpp\
+			src/Window/Control.cpp\
+			src/Window/Draw.cpp\
 			src/Window/Open.cpp\
 			src/Window/Rendered.cpp\
 

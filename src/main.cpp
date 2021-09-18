@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
     Window Window;
     while(Window.isOpen())
     {
-
+        Window.draw();
     }
     Window.rendered();
     return EXIT_SUCCESS;

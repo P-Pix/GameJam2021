@@ -15,7 +15,7 @@ Window::Window(void)
     {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "[DEBUG] > %s", SDL_GetError());
     }
-    this -> m_Window = SDL_CreateWindow("Window", 0, 0, 1080, 720, SDL_WINDOW_SHOWN);
+    SDL_CreateWindowAndRenderer(m_WindowWidth, m_WindowHeight, SDL_WINDOW_SHOWN, &m_Window, &m_Render);
     if(m_Window == nullptr)
     {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "[DEBUG] > %s", SDL_GetError());
@@ -23,6 +23,7 @@ Window::Window(void)
 }
 Window::~Window(void)
 {
+    SDL_DestroyRenderer(m_Render);
     SDL_DestroyWindow(m_Window);
     SDL_Quit(); 
 }

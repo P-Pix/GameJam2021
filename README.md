@@ -1,4 +1,4 @@
-# GameJam2021
+# GameJam2021 Join Together
 Personal Creation for a pseudo GameJam2021
 
 # Game
