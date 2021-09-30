@@ -12,40 +12,40 @@
 
 #include <iostream>
 #include "../SDL2-2.0.16/include/SDL.h"
+#include "Creature.hpp"
 
-class Window
-{
-    private:
-        unsigned int    m_WindowWidth   = 1080,
-                        m_WindowHeight  = 720;
-                        
-        SDL_Window *m_Window;
-        SDL_Renderer *m_Render;
+class Window {
+private:
+    unsigned int m_WindowWidth = 1080,
+            m_WindowHeight = 720;
 
-        bool m_WindowOpen = true;
+    SDL_Window *m_Window;
+    SDL_Renderer *m_Render;
 
-    protected:
+    bool m_WindowOpen = true;
 
-    public:
+protected:
 
-        /// Default Constructor
-        Window(void);
+public:
 
-        /// Default Destructor
-        ~Window(void);
+    /// Default Constructor
+    Window(void);
 
-        /// Test if the window is open
-        /// \return True if the window is open False if not
-        bool isOpen(void);
+    /// Default Destructor
+    ~Window(void);
 
-        /// Controle the window
-        void pollEvent(void);
+    /// Test if the window is open
+    /// \return True if the window is open False if not
+    bool isOpen(void);
 
-        /// update the Window render
-        void rendered(void);
+    /// Controle the window
+    void pollEvent(void);
 
-        /// All drawing element on the window
-        void draw(void);
+    /// update the Window render
+    void rendered(void);
+
+    /// All drawing element on the window
+    void draw(void);
 };
 
 #endif

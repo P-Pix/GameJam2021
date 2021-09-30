@@ -11,5 +11,5 @@
 
 bool Window::isOpen(void)
 {
-    return m_WindowOpen;
+    return 0;
 }
